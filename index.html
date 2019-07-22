@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>RaspBot - A Caffeine Project</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="./static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Plugin CSS -->
+  <link href="./static/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="./static/css/freelancer.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/style.css">
+
+</head>
+
+
+
+<body id="page-top">
+    
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">RaspBot <img src="./static/img/logo.png"  height="60" width="60"/></a>
+      <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Caffeine Members</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">The RaspBot Project</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Screencast</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead bg-primary text-white text-center">
+    <div class="container">
+        <div>
+            <h1 class="text-uppercase mb-0">Welcome, Captain</h1>
+            <hr class="star-light">
+            <div class = "controlPanel">
+
+              <div class = "blankButton"></div>
+              
+              <div class = "buttonArea btn-default">
+                <button type="button" id = "forward" class = "buttonStyle responsive-width">
+                  Forward
+                </button>
+              </div>
+
+              <div class = "blankButton"></div>
+              
+              <div class = "buttonArea">
+                <button type="button" id = "left" class = "buttonStyle responsive-width">
+                    Left
+                </button>
+              </div>
+
+              <div class = "buttonArea">			
+                <button type="button" id = "backward" class = "buttonStyle responsive-width">
+                    Back
+                </button>		
+              </div>
+
+              <div class = "buttonArea">  
+                <button type="button" id = "right" class = "buttonStyle responsive-width">
+                  Right
+                </button>    
+              </div>
+            </div>
+
+            <br>
+            <h4>Speed Control</h4>
+            <div class = "speedControl">				
+              <div class="toggle_radio" style="font-size:24px">
+                <input type="radio" class="toggle_option" id="first_toggle" name="toggle_option" checked>
+                <input type="radio" class="toggle_option" id="second_toggle" name="toggle_option">
+                <input type="radio" class="toggle_option" id="third_toggle" name="toggle_option">
+                <label for="first_toggle">Slow</label>
+                <label for="second_toggle">Medium</label>
+                <label for="third_toggle">Fast</label>
+                <div class="toggle_option_slider"></div>
+            </div>
+        </div>       
+    </div>
+  </header>
+
+  <!-- Caffeine Members Section -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <h2 class="text-center text-uppercase text-secondary mb-0">Meet The Team</h2>
+      <hr class="star-dark mb-5">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="./static/img/portfolio/Eric.jpeg" alt="">
+          </a>
+          <h4 class="text-uppercase mb-4" Style="text-align: center">Eric Michel</h4>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="./static/img/portfolio/jhon.png" alt="">
+          </a>
+          <h4 class="text-uppercase mb-4" Style="text-align: center">Jhon Loaiza</h4>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="./static/img/portfolio/vilmarys.jpg" alt="">
+          </a>
+          <h4 class="text-uppercase mb-4" Style="text-align: center">Vilmarys Salgado</h4>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="./static/img/portfolio/Nancy.jpeg" alt="">
+          </a>
+          <h4 class="text-uppercase mb-4" Style="text-align: center">Nancy Aguilera</h4>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="./static/img/portfolio/julio.jpg" alt="">
+          </a>
+          <h4 class="text-uppercase mb-4" Style="text-align: center">Julio Lopez</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Section -->
+  <section class="bg-primary text-white mb-0" id="about">
+    <div class="container">
+      <h2 class="text-center text-uppercase text-white">Our Project</h2>
+      <hr class="star-light mb-5">
+      <div class="row">
+        <div class="col-lg-4 ml-auto">
+          <p class="lead">
+            The main focus of this project is to create a functional robot which is controlled 
+            through a web application. The web application will host a user interface that can control the robot’s states,
+            whether it would be moving, turning or stopped. It would also be able to adjust the speeds at which these actions can be done. <br>
+          </p>
+        </div>
+        <div class="col-lg-4 mr-auto">
+          <p class="lead">
+            The project itself will explore the concept of the Internet of Things (IoT) as well
+            as basic robotics through circuitry and electronics and fuse them both. 
+            It is also aiming to broadcast this concept (controlling devices with a touch of a button from any 
+            location) to others who wish to learn it.<br>
+          </p>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a class="btn btn-xl btn-outline-light" href="./static/testProj.pdf" download>
+          <i class="fas fa-download mr-2"></i>
+          Download Our Report
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- College Section -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="text-center text-uppercase text-secondary mb-0">Screencast</h2>
+      <hr class="star-dark mb-5">
+      <div style="text-align:center"><iframe width="560" height="315" src="https://www.youtube.com/embed/jJMN6cli4Tk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+          <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-5 mb-lg-0">
+        </div>
+        <div class="col-md-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Special Thanks To:</h4>
+          <p class="lead mb-0">
+            Amilcar Aponte <br>
+            Graham Glanville <br>
+            Greg South <br></p>
+        </div>
+        <div class="col-md-4">
+      </div>
+    </div>
+  </footer>
+
+  <div class="copyright py-4 text-center text-white">
+    <div class="container">
+      <small>Copyright &copy; of Caffeine</small>
+    </div>
+  </div>
+
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+  <div class="scroll-to-top d-lg-none position-fixed ">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </div>
+
+  <!-- Portfolio Modals -->
+
+  <!-- Portfolio Modal 1 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Eric</h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="./static/img/portfolio/Eric.jpeg" alt="">
+            <p class="mb-5">
+              As a full-time student currently in third year of a BSc in IT and working part-time in Ireland, 
+              I am looking to expand myself into the IT industry to improve my knowledge and gain valuable experience.
+              I consider myself a precise hard worker and am always up for any challenge.<br><br>
+              <a href="https://www.linkedin.com/in/eric-b-michel/">
+                <img src="./static/img/linkedIn.png" style="width:120px; height: 38px">
+              </a>
+            </p>
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+              <i class="fa fa-close"></i>
+              Go Back
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 2 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Jhon Loaiza</h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="./static/img/portfolio/Jhon.png" alt="">
+            <p class="mb-5">
+              through my working career, opportunities have been my key to success, to update my skills and improve my weaknesses.
+               A highly motivated self-starter who is analytically minded with excellent communication skills, leadership ability, problem solver and a proven team player able to adapt easily to changes. <br><br>
+              <a href="https://www.linkedin.com/in/jhonloaiza/">
+                <img src="./static/img/linkedIn.png" style="width:120px; height: 38px">
+              </a>
+            </p>
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+              <i class="fa fa-close"></i>
+              Go Back</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 3 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Vilmarys Salgado</h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="./static/img/portfolio/vilmarys.jpg" alt="">
+            <p class="mb-5">
+              Goal-Oriented IT professional with vocation for technology and passionate about learning new programming languages, 
+              desired to design, implement and test software applications, possessing a solid analytical and problem solving skill, proactive and detail oriented person.<br><br>
+              <a href="https://www.linkedin.com/in/vilmaryss/">
+                <img src="./static/img/linkedIn.png" style="width:120px; height: 38px">
+              </a>
+            </p>
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+              <i class="fa fa-close"></i>
+              Go Back</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 4 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio-modal-4">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Nancy Aguilera</h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="./static/img/portfolio/Nancy.jpeg" alt="">
+            <p class="mb-5">
+              I am a dynamic and highly motivated person with excellent leadership skills. 
+              I have strong communication and interpersonal skills and a proven track record of effectively working within large organizations and using my own initiative when required. 
+              I am strongly engineer focused and enjoy new challenges.<br><br>
+              <a href="https://www.linkedin.com/in/aguileranancy/">
+                <img src="./static/img/linkedIn.png" style="width:120px; height: 38px">
+              </a>
+            </p>
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+              <i class="fa fa-close"></i>
+              Go Back</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 5 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio-modal-5">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Julio Lopez</h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="./static/img/portfolio/Julio.jpg" alt="">
+            <p class="mb-5">
+              I am passionate about solving challenging problems, strong work ethic, goals driven,
+               quick to master and apply new skills who is analytically minded with excellent communication skills, leadership ability and a proven team player.<br><br>
+               <a href="https://www.linkedin.com/in/julioclopezz/">
+                 <img src="./static/img/linkedIn.png" style="width:120px; height: 38px">
+               </a>
+              </p>
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+              <i class="fa fa-close"></i>
+              Go Back</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="./static/vendor/jquery/jquery.min.js"></script>
+  <script src="./static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="./static/vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="./static/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+
+  <!-- Custom scripts for this template -->
+  <script src="./static/js/freelancer.min.js"></script>
+
+  <!-- My Custom JS-->
+  <script src="./static/js/jquery-3.3.1.min.js"></script>
+  <script src="./static/js/socket.io.js"></script>
+  <script src="./static/js/custom.js"></script>
+</body>
+
+</html>
